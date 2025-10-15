@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Mogra&family=Montserrat&family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 
-.active hr{
-    @apply block
+@theme {
+  --color-primary: #5f6FFF;
+  --color-secondary: #facc15;
+  --font-display: 'Poppins', sans-serif;
+  --spacing-card: 1.5rem;
+}
+
+* {
+  font-family: Outfit;
+}
+/* for uderline effect for active tab */
+.active hr {
+  @apply block;
+}
+
+/* to hide the scroll bar */
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+@media (max-width: 740px) {
+  .active p {
+    @apply text-white bg-primary;
+  }
 }
