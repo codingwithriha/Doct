@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../assets/assets_frontend/assets";
+import { assets } from "../assets/assets_frontend/assets.js";
 
 const Header = () => {
   return (
